@@ -1,0 +1,211 @@
+
+ * {
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    box-shadow: 0px 10px 30px rgb(222, 219, 213);
+    position: sticky;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+.container > div {
+    padding: 10px 0 10px 0;
+        
+}
+.logo {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+.menu > div {
+    margin: 0 10px 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 15px 0 0 0;
+    cursor: pointer;
+}
+.menu > div:hover {
+    color: rgb(131, 129, 129);
+}
+.text-primary {
+    color: aqua !important;
+    margin: 10px 0 0 0;
+}
+.dropdown-toggle {
+    text-decoration: none;
+    color: var(--bs-body-color);
+}
+.dropdown-toggle:hover {
+    color: rgb(131, 129, 129);
+}
+.dropdown-item {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+
+/* INTRO */
+
+.intro {
+    background-color: rgb(251, 251, 251);
+}
+
+.intro-me {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 0 0;
+}
+.text {
+    margin: 50px 0 0 0;
+}
+.text > h1 {
+    padding: 20px 0 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 20px;
+    font-size: 60px;
+}
+.text > p {
+    color: rgb(83, 80, 80);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.discover-btn {
+    font-size: 16px;
+    color: white;
+    background-color: aquamarine;
+    width: 150px;
+    height: 40px;
+    border-radius: 0% !important;
+}
+.photo {
+    border: 30px solid aqua;
+    flex-basis: 100%;
+    width: 80px;
+    height: 500px;
+    align-self: center;
+    position: relative;
+    border-radius: 10%;
+}
+.photo1 {
+    /* border: 3px solid black; */
+    background-image: url('../images/chimao.png');
+    background-size: cover;
+    flex-basis: 100%;
+    width: 100%;
+    height: 600px;
+    /* margin: -150px 0 0 50px; */
+    position: absolute;
+    top: -150px;
+    right: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+@media screen and (min-width: 1400px) {
+    .intro-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 100px 0 0 0;
+    }
+    .text {
+        flex-basis: 40%;
+    }
+    .photo {
+        flex-basis: 40%;
+        width: 100px;
+        height: 450px;
+        position: relative;
+    }
+    .photo1 {
+        flex-basis: 40%;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top: -140px;
+        right: -80px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .intro-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 80px 0 0 0;
+    }
+    .text {
+        flex-basis: 40%;
+    }
+    .photo {
+        flex-basis: 40%;
+        width: 100px;
+        height: 400px;
+        position: relative;
+        border: 25px solid aqua;
+    }
+    .photo1 {
+        flex-basis: 40%;
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        top: -140px;
+        right: -71px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .intro-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 60px 0 0 0;
+    }
+    .text {
+        flex-basis: 40%;
+    }
+    .text > h1 {
+        padding: 20px 0 20px 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 15px;
+        font-size: 40px;
+    }
+    .text > p {
+        color: rgb(83, 80, 80);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .photo {
+        flex-basis: 45%;
+        width: 100%;
+        height: 312px;
+        position: relative;
+        border: 15px solid aqua;
+    }
+    .photo1 {
+        width: 272px;
+        height: 425px;
+        position: absolute;
+        top: -100px;
+        right: -16px;
+    }
+}
