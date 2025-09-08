@@ -7,6 +7,8 @@
 .header {
     box-shadow: 0px 10px 30px rgb(222, 219, 213);
     position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .container {
@@ -75,16 +77,21 @@
 .intro-me {
     display: flex;
     flex-direction: column;
-    margin: 100px 0 0 0;
+    margin: 0px 0 0 0;
+}
+.introText {
+    margin: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
 }
 .text {
-    margin: 50px 0 0 0;
+    padding: 0 10px 0 10px;
 }
 .text > h1 {
-    padding: 20px 0 20px 0;
+    padding: 0px 0 10px 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 20px;
-    font-size: 60px;
+    font-size: 30px;
 }
 .text > p {
     color: rgb(83, 80, 80);
@@ -93,119 +100,83 @@
 .discover-btn {
     font-size: 16px;
     color: white;
-    background-color: aquamarine;
+    background-color: aqua;
     width: 150px;
     height: 40px;
     border-radius: 0% !important;
 }
-.photo {
-    border: 30px solid aqua;
-    flex-basis: 100%;
-    width: 80px;
-    height: 500px;
-    align-self: center;
-    position: relative;
-    border-radius: 10%;
+.discover-btn:hover {
+    background-color: rgb(204, 200, 200);
+    font-weight: 500;
 }
-.photo1 {
-    /* border: 3px solid black; */
-    background-image: url('../images/chimao.png');
-    background-size: cover;
+.introPhoto {
+    margin: 60px 0 0 0;
     flex-basis: 100%;
-    width: 100%;
-    height: 600px;
-    /* margin: -150px 0 0 50px; */
+    align-content: center;
+}
+.photo {
+    margin: 0 0 0 0;
+    border: 10px solid aqua;
+    width: 74%;
+    height: 230px;
+    justify-self: center;
+    position: relative;
+    /* border-radius: 10%; */
+}
+.photo_bg {
     position: absolute;
-    top: -150px;
-    right: 0;
+    object-fit: cover;
+    border: 2px solid red;
+    width: 100%;
+    bottom: -10%;
+}
+@media screen and (min-width: 768px) {
+    .photo {
+        margin: 0 0 0 0;
+        border: 10px solid aqua;
+        width: 74%;
+        height: 420px;
+        justify-self: center;
+        position: relative;
+        /* border-radius: 10%; */
+    }
+    .photo_bg {
+        position: absolute;
+        object-fit: cover;
+        border: 2px solid red;
+        width: 78%;
+        height: auto;
+        bottom: -14%;
+        right: -3%;
+    }
+}
+@media screen and (min-width: 993px) {
+    .intro-me {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0 0 0;
+        justify-content: center;
+        border: 2px solid red;
+    }
+    .introText {
+        flex-basis: 40%;
+        border: 2px solid red;
+    }
+    .introPhoto {
+        flex-basis: 50%;
+        border: 2px solid red;
+    }
+}
+/* .photo1 {
+    border: 3px solid black;
+    background-image: url('../images/chimao.png');
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -40%;
+    left: 10%;
     overflow-clip-margin: content-box;
     overflow: clip;
-}
+} */
 
-@media screen and (min-width: 1400px) {
-    .intro-me {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 100px 0 0 0;
-    }
-    .text {
-        flex-basis: 40%;
-    }
-    .photo {
-        flex-basis: 40%;
-        width: 100px;
-        height: 450px;
-        position: relative;
-    }
-    .photo1 {
-        flex-basis: 40%;
-        width: 100%;
-        height: 600px;
-        position: absolute;
-        top: -140px;
-        right: -80px;
-    }
-
-}
-@media screen and (min-width: 1200px) {
-    .intro-me {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 80px 0 0 0;
-    }
-    .text {
-        flex-basis: 40%;
-    }
-    .photo {
-        flex-basis: 40%;
-        width: 100px;
-        height: 400px;
-        position: relative;
-        border: 25px solid aqua;
-    }
-    .photo1 {
-        flex-basis: 40%;
-        width: 100%;
-        height: 550px;
-        position: absolute;
-        top: -140px;
-        right: -71px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .intro-me {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 60px 0 0 0;
-    }
-    .text {
-        flex-basis: 40%;
-    }
-    .text > h1 {
-        padding: 20px 0 20px 0;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        letter-spacing: 15px;
-        font-size: 40px;
-    }
-    .text > p {
-        color: rgb(83, 80, 80);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    .photo {
-        flex-basis: 45%;
-        width: 100%;
-        height: 312px;
-        position: relative;
-        border: 15px solid aqua;
-    }
-    .photo1 {
-        width: 272px;
-        height: 425px;
-        position: absolute;
-        top: -100px;
-        right: -16px;
-    }
-}
