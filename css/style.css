@@ -114,43 +114,24 @@
     flex-basis: 100%;
     align-content: center;
 }
-.photo {
-    margin: 0 0 0 0;
-    border: 10px solid aqua;
-    width: 74%;
-    height: 230px;
-    justify-self: center;
-    position: relative;
-    /* border-radius: 10%; */
-}
+
 .photo_bg {
-    position: absolute;
-    object-fit: cover;
     border: 2px solid red;
     width: 100%;
-    bottom: -10%;
 }
-@media screen and (min-width: 768px) {
-    .photo {
-        margin: 0 0 0 0;
-        border: 10px solid aqua;
-        width: 74%;
-        height: 420px;
-        justify-self: center;
-        position: relative;
-        /* border-radius: 10%; */
+@media (min-width: 768px) {
+    .introPhoto {
+        display: flex;
+        flex-basis: 60%;
+        justify-content: center;
     }
     .photo_bg {
-        position: absolute;
-        object-fit: cover;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 78%;
-        height: auto;
-        bottom: -14%;
-        right: -3%;
+        margin: auto;
     }
 }
-@media screen and (min-width: 993px) {
+@media (min-width: 993px) {
     .intro-me {
         display: flex;
         flex-direction: row;
@@ -163,8 +144,37 @@
         border: 2px solid red;
     }
     .introPhoto {
+        display: flex;
         flex-basis: 50%;
         border: 2px solid red;
+        justify-content: center;
+    }
+    .photo_bg {
+        /* border: 2px solid red; */
+        width: 80%;
+    }
+}
+@media (min-width: 1150px) {
+    .intro-me {
+        display: flex;
+        flex-direction: row;
+        margin: 80px 0 0 0;
+        justify-content: center;
+        border: 2px solid red;
+    }
+    .introText {
+        flex-basis: 40%;
+        border: 2px solid red;
+    }
+    .introPhoto {
+        display: flex;
+        flex-basis: 50%;
+        border: 2px solid red;
+        justify-content: center;
+    }
+    .photo_bg {
+        /* border: 2px solid red; */
+        width: 80%;
     }
 }
 /* .photo1 {
