@@ -16,16 +16,16 @@ body h1 h2 h3 h4 h5 h6 {
     z-index: 999;
 }
 
-.container {
+.headerCont {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
 }
-.container > div {
+.headerCont > div {
     padding: 10px 0 10px 0;
         
 }
-.container > .logo {
+.headerCont > .logo {
     display: flex;
     justify-content: right;
     color: black;
@@ -64,7 +64,7 @@ body h1 h2 h3 h4 h5 h6 {
 }
 
 @media screen and (max-width: 991px) {
-    .container {
+    .headerCont {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-between;
@@ -74,14 +74,14 @@ body h1 h2 h3 h4 h5 h6 {
     }
 }
 @media screen and (min-width: 992px) {
-    .container {
+    .headerCont {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-around;
     }
 }
 @media screen and (min-width: 1200px) {
-    .container {
+    .headerCont {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-between;
@@ -390,6 +390,12 @@ body h1 h2 h3 h4 h5 h6 {
     height: 3.5rem;
 }
 
+.serviceOffers1 {
+    padding: 10px 12px 0 12px;
+}
+.serviceOffers6 > h5 {
+    padding: 17px 0 0 0;
+}
 @media screen and (min-width: 768px) {
     .services {
         margin: 90px 0 0 0;
@@ -408,3 +414,10 @@ body h1 h2 h3 h4 h5 h6 {
         padding: 0 150px 0 150px;
     }
 }
+
+/* ACHIEVEMENTS */
+
+.achievements {
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+
