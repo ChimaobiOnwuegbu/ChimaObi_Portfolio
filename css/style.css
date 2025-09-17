@@ -389,6 +389,16 @@ body h1 h2 h3 h4 h5 h6 {
     width: 3.5rem;
     height: 3.5rem;
 }
+/* .myIcon:hover {
+    fill: red;
+} */
+
+.iconh5:hover {
+    color: red;
+    fill: red;
+    cursor: pointer;
+    /* border: 0.5px solid red; */
+}
 
 .serviceOffers1 {
     padding: 10px 12px 0 12px;
@@ -396,6 +406,9 @@ body h1 h2 h3 h4 h5 h6 {
 .serviceOffers6 > h5 {
     padding: 17px 0 0 0;
 }
+
+
+
 @media screen and (min-width: 768px) {
     .services {
         margin: 90px 0 0 0;
@@ -419,5 +432,22 @@ body h1 h2 h3 h4 h5 h6 {
 
 .achievements {
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    margin: 40px 0 0 0;
+}
+.achiever {
+    padding: 100px 0 100px 0;
+    color: #ffff;
+}
+.achiever > h1 {
+      font-size: 4em;
+      text-align: center;
+      margin-top: 100px;
+      color: #ffff;
+      font-family: Arial, sans-serif;
+      font-weight: 500;
 }
 
+.box {
+    width: 500px;
+    height: 500px;
+}
